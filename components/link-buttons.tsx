@@ -128,6 +128,7 @@ export function LinkButtons() {
 
   return (
     <>
+    <h2 className="font-retro text-4xl text-black text-center mb-8 px-6 mt-12">Connect & Support</h2>
     <div className="flex flex-col gap-6 px-6 mt-6 w-full">
       {sections.map((section) => (
         <div key={section.title} className="flex flex-col gap-3 bg-white border-4 border-black rounded-3xl p-4 transition-all shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[10px_10px_0px_rgba(0,0,0,1)] hover:-translate-y-2">

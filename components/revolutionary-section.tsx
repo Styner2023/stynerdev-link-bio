@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export function RevolutionarySection() {
   return (
-    <section className="w-full mt-12 relative">
-      <img src="/img/Orange-flower.png" alt="Flower" className="absolute -top-40 -right-4 w-48 h-48 md:w-56 md:h-56" />
+    <section className="w-full mt-24 relative">
+      <img src="/img/Orange-flower.png" alt="Flower" className="absolute -top-32 -right-4 w-48 h-48 md:w-56 md:h-56" />
       <div className="bg-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-        <h2 className="font-retro text-4xl text-black mb-6">The Revolutionary Who Raised Me</h2>
+        <h2 className="font-retro text-4xl text-black mb-6">My Father, My Hero</h2>
         
         <div className="relative w-full rounded-2xl border-4 border-black overflow-hidden mb-6" style={{ aspectRatio: '4/5' }}>
           <Image

@@ -26,19 +26,24 @@ const AudiomackIcon = () => (
     title: "Social Media",
     links: [
       {
-        label: "Follow Me on Instagram",
-        url: "https://www.instagram.com/kxdutch",
-        icon: Instagram,
-      },
-      {
         label: "Follow Me on X",
         url: "https://x.com/StynerDev",
         icon: Twitter,
       },
       {
+        label: "Connect on LinkedIn",
+        url: "https://www.linkedin.com/in/styner-stiner/",
+        icon: ExternalLink,
+      },
+      {
         label: "Read My Essays on Medium",
         url: "https://medium.com/@stynerdev",
         icon: BookOpen,
+      },
+      {
+        label: "Follow Me on Instagram",
+        url: "https://www.instagram.com/kxdutch",
+        icon: Instagram,
       },
     ],
   },
@@ -87,6 +92,16 @@ const AudiomackIcon = () => (
         icon: Github,
       },
       {
+        label: "View My Hackathon Profile",
+        url: "https://dorahacks.io/hacker/StynerDev",
+        icon: Code,
+      },
+      {
+        label: "View My Certifications & Badges",
+        url: "https://www.credly.com/users/kishana.stiner/badges",
+        icon: ExternalLink,
+      },
+      {
         label: "Hire Me for Your Project",
         url: "https://www.styner.dev/contact",
         icon: Code,
@@ -104,7 +119,7 @@ const AudiomackIcon = () => (
       },
       {
         label: "Buy Me Tea",
-        url: "https://links.styner.dev/",
+        url: "https://www.paypal.com/ncp/payment/ZQ2WSTVYPMCRC",
         icon: ExternalLink,
       },
     ],

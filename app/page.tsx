@@ -9,6 +9,7 @@ import { ServicesSection } from "@/components/services-section"
 import { LiveReadingsSection } from "@/components/live-readings-section"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { CustomBioService } from "@/components/custom-bio-service"
 import { LinkButtons } from "@/components/link-buttons"
 import { FooterSection } from "@/components/footer-section"
 
@@ -19,7 +20,7 @@ export default function Page() {
         <HeroSection />
         <div className="w-full mt-2 pt-2 text-center">
           <div className="flex items-center justify-center gap-2 md:gap-4">
-            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-12 h-12 md:w-16 md:h-16" />
+            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-14 h-14 md:w-20 md:h-20" />
             <svg className="w-16 md:w-24 h-2 md:h-3" viewBox="0 0 100 12" preserveAspectRatio="none">
               <path d="M0,6 Q12.5,2 25,6 T50,6 T75,6 T100,6" stroke="black" strokeWidth="2" fill="none" strokeLinecap="round" />
               <circle cx="10" cy="6" r="1.5" fill="black" />
@@ -28,7 +29,7 @@ export default function Page() {
               <circle cx="70" cy="6" r="1.5" fill="black" />
               <circle cx="90" cy="6" r="1.5" fill="black" />
             </svg>
-            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-12 h-12 md:w-16 md:h-16 scale-x-[-1]" />
+            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-14 h-14 md:w-20 md:h-20 scale-x-[-1]" />
           </div>
           <p className="font-retro text-2xl md:text-4xl lg:text-5xl text-black font-bold leading-tight mt-8 md:mt-16 px-2">
             The Revolutionary Who Raised Me
@@ -40,7 +41,7 @@ export default function Page() {
         <LiveReadingsSection />
         <div className="w-full mt-8 pt-6 text-center">
           <div className="flex items-center justify-center gap-2 md:gap-4">
-            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-12 h-12 md:w-16 md:h-16" />
+            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-14 h-14 md:w-20 md:h-20" />
             <svg className="w-16 md:w-24 h-2 md:h-3" viewBox="0 0 100 12" preserveAspectRatio="none">
               <path d="M0,6 Q12.5,2 25,6 T50,6 T75,6 T100,6" stroke="black" strokeWidth="2" fill="none" strokeLinecap="round" />
               <circle cx="10" cy="6" r="1.5" fill="black" />
@@ -49,7 +50,7 @@ export default function Page() {
               <circle cx="70" cy="6" r="1.5" fill="black" />
               <circle cx="90" cy="6" r="1.5" fill="black" />
             </svg>
-            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-12 h-12 md:w-16 md:h-16 scale-x-[-1]" />
+            <img src="/img/black-handmade-flowers-leaves-floral/24.png" alt="Flower" className="w-14 h-14 md:w-20 md:h-20 scale-x-[-1]" />
           </div>
           <p className="font-retro text-2xl md:text-4xl lg:text-5xl text-black font-bold leading-tight mt-8 md:mt-16 px-2">
             This foundation shapes everything I build.
@@ -57,6 +58,7 @@ export default function Page() {
         </div>
         <TestimonialsSection />
         <PortfolioSection />
+        <CustomBioService />
         <LinkButtons />
         <FooterSection />
       </main>

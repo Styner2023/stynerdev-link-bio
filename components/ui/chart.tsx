@@ -190,9 +190,14 @@ function ChartTooltipContent({
   return (
     <div
       className={cn(
-        'border-border/50 bg-background grid min-w-32 items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
+        'border-border/50 bg-background grid min-w-48 items-start gap-2.5 rounded-2xl border px-4 py-2.5 text-base shadow-xl',
         className,
       )}
+      style={{
+        position: 'absolute',
+        left: '16px',
+        top: '16px',
+      } as React.CSSProperties}
     >
       {!nestLabel ? tooltipLabel : null}
       <div className="grid gap-1.5">

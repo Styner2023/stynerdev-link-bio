@@ -78,25 +78,35 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
     return null
   }
 
+  // Whitelist of valid CSS color patterns
+  const isValidColor = (value: unknown): value is string => {
+    if (typeof value !== 'string') return false
+    // Only allow hex, rgb, rgba, hsl, hsla colors
+    return /^(#[0-9a-f]{3,8}|rgb|hsl)a?\(/i.test(value)
+  }
+
+  const cssRules = Object.entries(THEMES)
+    .map(([theme, prefix]) => {
+      const rules = colorConfig
+        .map(([key, itemConfig]) => {
+          const color =
+            itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
+            itemConfig.color
+          
+          if (!isValidColor(color)) return null
+          return `  --color-${key}: ${color};`
+        })
+        .filter((rule): rule is string => rule !== null)
+        .join('\n')
+      
+      return `${prefix} [data-chart=${id}] {\n${rules}\n}`
+    })
+    .join('\n')
+
   return (
     <style
       dangerouslySetInnerHTML={{
-        __html: Object.entries(THEMES)
-          .map(
-            ([theme, prefix]) => `
-${prefix} [data-chart=${id}] {
-${colorConfig
-  .map(([key, itemConfig]) => {
-    const color =
-      itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
-      itemConfig.color
-    return color ? `  --color-${key}: ${color};` : null
-  })
-  .join('\n')}
-}
-`,
-          )
-          .join('\n'),
+        __html: cssRules,
       }}
     />
   )
@@ -173,7 +183,7 @@ function ChartTooltipContent({
   return (
     <div
       className={cn(
-        'border-border/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
+        'border-border/50 bg-background grid min-w-32 items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
         className,
       )}
     >

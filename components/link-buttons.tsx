@@ -68,7 +68,7 @@ const AudiomackIcon = () => (
     links: [
       {
         label: "Suriname OnSite — Trusted Services for Diaspora",
-        url: "https://surinameonsite.com",
+        url: "https://www.surinameonsite.com/",
         icon: Globe,
       },
     ],

@@ -35,6 +35,7 @@ export const metadata: Metadata = {
   description: 'All my links in one place. Follow me on Instagram, TikTok, YouTube, X, and more.',
   authors: [{ name: 'StynerDev', url: 'https://www.styner.dev/' }],
   creator: 'StynerDev',
+  themeColor: '#000000',
   icons: {
     icon: [
       {
@@ -60,8 +61,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" style={{ height: '100%', minHeight: '-webkit-fill-available' }}>
-      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`} style={{ height: '100%', minHeight: '-webkit-fill-available' }}>
+    <html lang="en">
+      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

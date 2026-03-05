@@ -19,18 +19,18 @@ export default function Page() {
     <>
       <LoadingScreen />
       <div
+        className="md:left-0 md:right-0 md:rounded-none"
         style={{
           position: 'fixed',
-          top: '-100px',
-          left: '-100px',
-          right: '-100px',
-          bottom: '-100px',
-          width: 'calc(100vw + 200px)',
-          height: 'calc(100vh + 200px)',
+          top: 0,
+          left: '20px',
+          right: '20px',
+          bottom: 0,
           backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          borderRadius: '24px',
           zIndex: -10,
         }}
       />

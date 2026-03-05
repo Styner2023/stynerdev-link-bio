@@ -15,7 +15,7 @@ import { FooterSection } from "@/components/footer-section"
 
 export default function Page() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')" }}>
+    <div className="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden bg-cover bg-center bg-no-repeat md:bg-fixed" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')" }}>
       <main className="relative bg-white border-4 border-black w-full max-w-[600px] overflow-hidden flex flex-col items-center py-8 md:py-10 px-4 md:px-6 rounded-3xl shadow-[8px_8px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_rgba(0,0,0,1)]">
         <HeroSection />
         <div className="w-full mt-0 pt-0 text-center">

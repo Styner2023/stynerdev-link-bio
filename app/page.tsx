@@ -19,7 +19,20 @@ export default function Page() {
     <>
       <LoadingScreen />
       {/* Fixed background for iOS compatibility */}
-      <div className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')", minHeight: '100svh', height: '100%' }} />
+      <div className="fixed inset-0 w-full h-full -z-10" style={{ 
+        backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: '100vw',
+        height: '100vh',
+        minHeight: '-webkit-fill-available'
+      }} />
       
       <div className="min-h-[100dvh] flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
         <main className="relative bg-white border-4 border-black w-full max-w-[600px] overflow-hidden flex flex-col items-center py-8 md:py-10 px-4 md:px-6 rounded-3xl shadow-[8px_8px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_rgba(0,0,0,1)]">

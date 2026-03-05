@@ -60,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`} style={{ backgroundColor: '#1a4d2e' }}>
+    <html lang="en" style={{ height: '100%', minHeight: '-webkit-fill-available' }}>
+      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`} style={{ height: '100%', minHeight: '-webkit-fill-available' }}>
         {children}
         <Analytics />
       </body>

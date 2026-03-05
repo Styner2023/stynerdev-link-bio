@@ -31,8 +31,8 @@ const grittyItalic = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Styner - Links',
-  description: 'All my links in one place. Follow me on Instagram, TikTok, YouTube, X, and more.',
+  title: 'StynerDev - Full-Stack Developer & AI Systems Architect',
+  description: 'I build systems that preserve power, protect truth, and scale impact. Daughter of a revolutionary, building infrastructure that lasts.',
   authors: [{ name: 'StynerDev', url: 'https://www.styner.dev/' }],
   creator: 'StynerDev',
   icons: {

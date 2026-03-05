@@ -19,14 +19,19 @@ export default function Page() {
     <>
       <LoadingScreen />
       <div
-        className="fixed inset-0 w-full h-full -z-10"
         style={{
+          position: 'fixed',
+          top: '-100px',
+          left: '-100px',
+          right: '-100px',
+          bottom: '-100px',
+          width: 'calc(100vw + 200px)',
+          height: 'calc(100vh + 200px)',
           backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          transform: "translateZ(0)",
-          willChange: "transform",
+          zIndex: -10,
         }}
       />
       

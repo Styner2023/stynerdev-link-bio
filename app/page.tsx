@@ -22,10 +22,10 @@ export default function Page() {
         className="md:left-0 md:right-0 md:rounded-none md:top-0 md:bottom-0"
         style={{
           position: 'fixed',
-          top: '-50px',
-          left: '8px',
-          right: '8px',
-          bottom: '-50px',
+          top: '-20px',
+          left: '4px',
+          right: '4px',
+          bottom: '-20px',
           backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',

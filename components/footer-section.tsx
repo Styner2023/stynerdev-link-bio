@@ -8,7 +8,7 @@ export function FooterSection() {
       <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-16 md:-bottom-20 -left-16 md:-left-24 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 scale-x-[-1] scale-y-[-1]" />
       <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-16 md:-bottom-20 -right-16 md:-right-24 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 scale-y-[-1]" />
       <div className="bg-foreground rounded-full px-1 md:px-2 py-1 md:py-1.5 flex items-center justify-center border-2 border-foreground">
-        <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4 w-full">
         <a
           href="https://styner.dev"
           target="_blank"
@@ -22,7 +22,7 @@ export function FooterSection() {
             STYNER
           </span>
         </a>
-        <span className="text-white font-sans font-bold text-xs md:text-sm pr-2 md:pr-4 text-center sm:text-left">Building Trust-First Apps</span>
+        <span className="text-white font-sans font-bold text-xs md:text-sm pr-2 md:pr-4 text-center">Building Trust-First Apps</span>
         </div>
       </div>
     </footer>

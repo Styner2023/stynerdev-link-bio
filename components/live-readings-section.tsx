@@ -13,10 +13,10 @@ export function LiveReadingsSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://mail.google.com/mail/u/0/?fs=1&to=readings@watanistiner.com&tf=cm" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-8 py-4 rounded-full font-sans font-bold text-sm hover:bg-[#DA3901] hover:text-white transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=readings@watanistiner.com&tf=cm" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-8 py-4 rounded-full font-sans font-bold text-sm text-center hover:bg-[#DA3901] hover:text-white transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
             Book a Reading
           </a>
-          <a href="https://mail.google.com/mail/u/0/?fs=1&to=speaking@watanistiner.com&tf=cm" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-8 py-4 rounded-full font-sans font-bold text-sm hover:bg-[#DA3901] hover:text-white transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=speaking@watanistiner.com&tf=cm" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-8 py-4 rounded-full font-sans font-bold text-sm text-center hover:bg-[#DA3901] hover:text-white transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
             Invite to Speak
           </a>
         </div>

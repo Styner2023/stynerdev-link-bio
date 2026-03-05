@@ -1,8 +1,8 @@
 export function CustomBioService() {
   return (
     <section className="w-full mt-12 mb-8 relative">
-      <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-8 left-0 w-32 h-32 md:w-40 md:h-40 scale-x-[-1] scale-y-[-1]" />
-      <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-8 right-0 w-32 h-32 md:w-40 md:h-40 scale-y-[-1]" />
+      <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-8 left-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 scale-x-[-1] scale-y-[-1]" />
+      <img src="/img/decorative-branches/bb_embroidery-01.png" alt="Decorative Branch" className="absolute -bottom-8 right-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 scale-y-[-1]" />
       <div className="bg-white border-4 border-black rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-[4px_4px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_rgba(0,0,0,1)] text-center">
         <h2 className="font-retro text-2xl md:text-3xl lg:text-4xl text-black mb-4 md:mb-6">Like This Link Bio?</h2>
         

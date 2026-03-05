@@ -12,10 +12,12 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { CustomBioService } from "@/components/custom-bio-service"
 import { LinkButtons } from "@/components/link-buttons"
 import { FooterSection } from "@/components/footer-section"
+import { LoadingScreen } from "@/components/loading-screen"
 
 export default function Page() {
   return (
     <>
+      <LoadingScreen />
       {/* Fixed background for iOS compatibility */}
       <div className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')" }} />
       

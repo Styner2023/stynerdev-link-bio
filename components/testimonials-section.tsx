@@ -16,8 +16,8 @@ export function TestimonialsSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 mb-4 md:mb-8">
         {principles.map((principle) => (
           <div key={principle.quote} className="bg-white border-4 border-black rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-[3px_3px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_rgba(0,0,0,1)]">
-            <blockquote className="font-serif text-sm md:text-lg lg:text-xl text-black mb-4 md:mb-6 italic">"{principle.quote}"</blockquote>
-            <p className="font-sans font-bold text-xs md:text-sm lg:text-base text-black text-right">— {principle.name}</p>
+            <blockquote className="font-serif text-sm md:text-lg lg:text-xl text-black mb-4 md:mb-6 italic text-center">"{principle.quote}"</blockquote>
+            <p className="font-sans font-bold text-xs md:text-sm lg:text-base text-black text-center md:text-right">— {principle.name}</p>
           </div>
         ))}
       </div>

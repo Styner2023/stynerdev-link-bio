@@ -19,19 +19,19 @@ export default function Page() {
     <>
       <LoadingScreen />
       {/* Fixed background for iOS compatibility */}
-      <div className="fixed inset-0 w-full h-full -z-10" style={{ 
+      <div style={{ 
         backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        width: '100vw',
-        height: '100vh',
-        minHeight: '-webkit-fill-available'
+        top: '-50px',
+        left: '-50px',
+        right: '-50px',
+        bottom: '-50px',
+        width: 'calc(100vw + 100px)',
+        height: 'calc(100vh + 100px)',
+        zIndex: -10
       }} />
       
       <div className="min-h-[100dvh] flex items-center justify-center p-4 md:p-8 relative overflow-hidden">

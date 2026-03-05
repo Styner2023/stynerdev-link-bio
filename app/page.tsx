@@ -19,9 +19,9 @@ export default function Page() {
     <>
       <LoadingScreen />
       {/* Fixed background for iOS compatibility */}
-      <div className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')", minHeight: '100vh', minWidth: '100vw' }} />
+      <div className="fixed inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')", height: '100dvh', width: '100dvw' }} />
       
-      <div className="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
+      <div className="min-h-[100dvh] flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
         <main className="relative bg-white border-4 border-black w-full max-w-[600px] overflow-hidden flex flex-col items-center py-8 md:py-10 px-4 md:px-6 rounded-3xl shadow-[8px_8px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_rgba(0,0,0,1)]">
           <HeroSection />
           <div className="w-full mt-0 pt-0 text-center">

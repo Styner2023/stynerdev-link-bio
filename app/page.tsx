@@ -25,12 +25,12 @@ export default function Page() {
           top: '-20px',
           left: '4px',
           right: '4px',
-          bottom: '-20px',
+          bottom: '-50px',
           backgroundImage: "url('https://pub-734cbe666a1846e4bfad1adc1574fe7a.r2.dev/images/3.sumiyoshi-taisha-grand-shrine-2026-01-09-06-37-33-utc.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          borderRadius: '24px',
+          borderRadius: '16px',
           zIndex: -10,
         }}
       />

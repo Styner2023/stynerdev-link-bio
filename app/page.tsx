@@ -19,7 +19,6 @@ export default function Page() {
     <>
       <LoadingScreen />
       <div
-        className="md:left-0 md:right-0 md:rounded-none md:top-0 md:bottom-0"
         style={{
           position: 'fixed',
           top: '-20px',
@@ -33,6 +32,7 @@ export default function Page() {
           borderRadius: '16px',
           zIndex: -10,
         }}
+        className="md:!left-0 md:!right-0 md:!top-0 md:!bottom-0 md:!rounded-none"
       />
       
       <div className="min-h-[100svh] flex items-center justify-center p-4 md:p-8 relative overflow-hidden">

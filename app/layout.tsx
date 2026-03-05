@@ -61,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`}>
+      <body className={`${dmSerif.variable} ${inter.variable} ${oldRocket.variable} ${kaviron.variable} ${grittyItalic.variable} font-sans antialiased`} style={{ backgroundColor: '#1a4d2e' }}>
         {children}
         <Analytics />
       </body>

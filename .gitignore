@@ -9,3 +9,14 @@ node_modules/
 .env*.local
 .DS_Store
 .vercel
+tsconfig.tsbuildinfo
+.refact/
+
+# Unoptimized source images kept locally; the served copies live in public/img/*.jpg
+public/img/black-handmade-flowers-leaves-floral/1.Styner_Stiner_Founder.png
+public/img/black-handmade-flowers-leaves-floral/2.Styner_Stiner_Founder.png
+public/img/black-handmade-flowers-leaves-floral/3.Styner_Stiner_Founder.png
+public/img/black-handmade-flowers-leaves-floral/144.png
+public/img/black-handmade-flowers-leaves-floral/164.png
+public/img/black-handmade-flowers-leaves-floral/14c.png
+public/img/black-handmade-flowers-leaves-floral/WATANISTINER.jpeg

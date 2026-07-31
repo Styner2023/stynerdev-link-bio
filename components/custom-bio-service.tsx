@@ -1,10 +1,13 @@
 const genres = [
   "Hip-Hop",
   "Conscious Rap",
+  "Trap",
   "Crunk",
   "Soca",
-  "Surinamese",
+  "Surinamese-Inspired",
   "R&B",
+  "Spoken Word",
+  "Revolutionary Anthems",
 ]
 
 const features = [
@@ -27,8 +30,32 @@ export function CustomBioService() {
         </div>
 
         <div className="text-black font-sans mb-6 md:mb-8 max-w-2xl mx-auto">
-          <p className="text-sm md:text-base leading-relaxed mb-5 md:mb-6">
-            I write original songs and lyrics for artists, projects, and brands — custom work written to fit your voice.
+          <blockquote className="text-left border-l-4 border-black pl-4 md:pl-6 mb-6 md:mb-8">
+            <p className="font-serif italic text-black text-lg md:text-2xl lg:text-3xl leading-snug">
+              I combine music, technology, and original storytelling.
+            </p>
+          </blockquote>
+
+          <div className="text-left space-y-3 md:space-y-4 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
+            <p>
+              As a developer, Full-Stack Systems Architect, Multi-Domain Strategist, songwriter, lyricist, and creative producer, I create work tailored to each artist.
+            </p>
+            <p>
+              Through GunSmoke Beats, I write original songs and lyrics for artists, projects, organizations, and brands — built around their voice, style, message, and audience.
+            </p>
+            <p>
+              Using professional audio software, open-source tools, and authorized AI technology, I can study an artist&rsquo;s vocal range, tone, phrasing, and delivery to write music that genuinely fits how they perform.
+            </p>
+            <p>
+              When appropriate and with the artist&rsquo;s permission, I can also develop private, locally trained AI voice models from approved recordings to help explore melodies, vocal arrangements, demos, and creative direction. I also teach artists how to use AI responsibly within their own creative workflows.
+            </p>
+            <p className="font-semibold">
+              I do not present myself as the singer on every record. My contribution is in the songwriting, lyrics, concepts, vocal development, production direction, branding, technical systems, and overall execution.
+            </p>
+          </div>
+
+          <p className="text-base md:text-lg lg:text-xl leading-snug font-bold py-2 md:py-4 mb-2">
+            Every project is original, purpose-driven, and created specifically for the person or brand behind it.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8">

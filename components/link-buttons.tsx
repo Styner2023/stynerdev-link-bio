@@ -182,7 +182,7 @@ const sections: Section[] = [
     links: [
       {
         label: "Birthday Game Lab — Coding Parties for Kids",
-        url: "https://www.kuumbacode.com/birthday-game-lab",
+        url: "https://www.kuumbacode.com/birthday-game-lab#bgl_games",
         icon: Gamepad2,
       },
       {

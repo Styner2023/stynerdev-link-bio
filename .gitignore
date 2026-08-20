@@ -13,6 +13,8 @@ tsconfig.tsbuildinfo
 .refact/
 
 # Unoptimized source images kept locally; the served copies live in public/img/*.jpg
+public/img/canticlefarm/canticlefarmoaklan.png
+public/img/canticlefarm/Aunty_Anie_CanticleFarm.png
 public/img/black-handmade-flowers-leaves-floral/1.Styner_Stiner_Founder.png
 public/img/black-handmade-flowers-leaves-floral/2.Styner_Stiner_Founder.png
 public/img/black-handmade-flowers-leaves-floral/3.Styner_Stiner_Founder.png

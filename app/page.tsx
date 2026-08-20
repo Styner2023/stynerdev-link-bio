@@ -13,6 +13,7 @@ import { CustomBioService } from "@/components/custom-bio-service"
 import { TeachingSection } from "@/components/teaching-section"
 import { Coding101Section } from "@/components/coding-101-section"
 import { BirthdayGameLabSection } from "@/components/birthday-game-lab-section"
+import { OrganizationsWeSupportSection } from "@/components/organizations-we-support-section"
 import { LinkButtons } from "@/components/link-buttons"
 import { FooterSection } from "@/components/footer-section"
 import { LoadingScreen } from "@/components/loading-screen"
@@ -81,6 +82,7 @@ export default function Page() {
           <TeachingSection />
           <Coding101Section />
           <BirthdayGameLabSection />
+          <OrganizationsWeSupportSection />
           <LinkButtons />
           <FooterSection />
         </main>

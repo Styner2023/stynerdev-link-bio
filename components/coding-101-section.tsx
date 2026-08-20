@@ -55,9 +55,14 @@ const courses = [
       specs: ["Nothing to install", "Chromebooks fine", "Any modern browser"],
       note: "A school or shared family laptop works for this one.",
     },
+    // Point at Styner's own profile and shared arcade, not the platform
+    // landing pages — a parent following these lands on real student work.
     platforms: [
-      { name: "Scratch", url: "https://scratch.mit.edu/" },
-      { name: "MakeCode Arcade", url: "https://arcade.makecode.com/" },
+      { name: "Scratch", url: "https://scratch.mit.edu/users/StynerDev/" },
+      {
+        name: "MakeCode Arcade",
+        url: "https://arcade.makecode.com/S56622-15254-87265-97643",
+      },
     ],
   },
 ]

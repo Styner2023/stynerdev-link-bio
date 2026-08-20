@@ -10,7 +10,7 @@
  */
 import Image from "next/image"
 
-const BOOKING_URL = "https://www.kuumbacode.com/birthday-game-lab"
+const BOOKING_URL = "https://www.kuumbacode.com/birthday-game-lab#bgl_games"
 
 type GameTemplate = {
   // Pulled out of the title so it can be rendered as a raised tile.

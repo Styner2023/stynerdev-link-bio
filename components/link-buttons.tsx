@@ -7,7 +7,7 @@
 import { useState } from "react"
 import type { ComponentType, SVGProps } from "react"
 import Image from "next/image"
-import { ExternalLink, Music, Globe, Code, BookOpen, GraduationCap, UserPlus, ShieldCheck, Fingerprint, Heart } from "lucide-react"
+import { ExternalLink, Music, Globe, Code, BookOpen, GraduationCap, UserPlus, ShieldCheck, Fingerprint, Gift, Gamepad2, Terminal } from "lucide-react"
 import { DonationModal } from "./donation-modal"
 
 // Lucide deprecated its brand icons, so these are inlined.
@@ -181,9 +181,14 @@ const sections: Section[] = [
     title: "Business",
     links: [
       {
-        label: "Suriname OnSite — Trusted Services for Diaspora",
-        url: "https://www.surinameonsite.com/",
-        icon: Globe,
+        label: "Birthday Game Lab — Coding Parties for Kids",
+        url: "https://www.kuumbacode.com/birthday-game-lab",
+        icon: Gamepad2,
+      },
+      {
+        label: "Coding 101 — Python & Game Development Courses",
+        url: "https://www.kuumbacode.com/coding-101",
+        icon: Terminal,
       },
       {
         label: "BenefitsSafe — Grant Compliance for Nonprofits",
@@ -191,9 +196,9 @@ const sections: Section[] = [
         icon: ShieldCheck,
       },
       {
-        label: "Kuumba Code — Free AI Education for Underserved Communities",
-        url: "https://www.kuumbacode.com/",
-        icon: GraduationCap,
+        label: "Suriname OnSite — Trusted Services for Diaspora",
+        url: "https://www.surinameonsite.com/",
+        icon: Globe,
       },
     ],
   },
@@ -201,9 +206,9 @@ const sections: Section[] = [
     title: "Support",
     links: [
       {
-        label: "Give to Kuumba Code — Fund a Student's Free Year",
+        label: "Support Kuumba Code — Fund a Student's Free Year",
         url: "https://www.kuumbacode.com/give",
-        icon: Heart,
+        icon: Gift,
         note: "Tax-deductible through our 501(c)(3) fiscal sponsor, Canticle Farm.",
       },
       {

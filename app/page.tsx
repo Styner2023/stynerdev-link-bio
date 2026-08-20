@@ -10,6 +10,8 @@ import { LiveReadingsSection } from "@/components/live-readings-section"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CustomBioService } from "@/components/custom-bio-service"
+import { TeachingSection } from "@/components/teaching-section"
+import { Coding101Section } from "@/components/coding-101-section"
 import { BirthdayGameLabSection } from "@/components/birthday-game-lab-section"
 import { LinkButtons } from "@/components/link-buttons"
 import { FooterSection } from "@/components/footer-section"
@@ -76,6 +78,8 @@ export default function Page() {
           <TestimonialsSection />
           <PortfolioSection />
           <CustomBioService />
+          <TeachingSection />
+          <Coding101Section />
           <BirthdayGameLabSection />
           <LinkButtons />
           <FooterSection />

@@ -84,14 +84,14 @@ export function BirthdayGameLabSection() {
 
         <div
           className="relative w-full max-w-md mx-auto rounded-2xl border-4 border-black overflow-hidden mb-6 md:mb-8"
-          style={{ aspectRatio: '3/4' }}
+          style={{ aspectRatio: '3/2' }}
         >
           <Image
-            src="/img/kuumba-code-service.jpg"
-            alt="Styner Stiner, who leads the Kuumba Code Birthday Game Lab, at her studio workstation"
-            width={798}
-            height={1200}
-            className="w-full h-full object-cover object-top"
+            src="/img/birthday-game-lab.jpg"
+            alt="Children and parents at a Kuumba Code Birthday Game Lab, building games in Scratch on laptops"
+            width={1200}
+            height={798}
+            className="w-full h-full object-cover"
           />
         </div>
 

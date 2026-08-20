@@ -190,6 +190,11 @@ const sections: Section[] = [
         url: "https://benefitssafe.com/",
         icon: ShieldCheck,
       },
+      {
+        label: "Kuumba Code — Free AI Education for Underserved Communities",
+        url: "https://www.kuumbacode.com/",
+        icon: GraduationCap,
+      },
     ],
   },
   {

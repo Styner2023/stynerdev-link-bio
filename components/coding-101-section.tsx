@@ -33,16 +33,20 @@ const courses = [
     name: "Python",
     kind: "Text-based code",
     blurb: "A real programming language, typed from the first line.",
-    // Spec floor set deliberately high so a student is never the one who
-    // gets stuck — headroom for whatever they decide to build, and a screen
-    // big enough to hold an editor and a terminal side by side.
+    // Taught in the CodeHS sandbox, which runs Python in the browser. That
+    // removes the hardware barrier entirely — the old spec floor here
+    // (16 GB, macOS/Windows, "Chromebooks won't work") turned away the exact
+    // families most likely to need the class. Do not reinstate it unless the
+    // course actually moves back to a local install.
     requirement: {
-      headline: "Needs a laptop that can install software",
-      specs: ["Windows or macOS", "16 GB RAM", "14\u2033 screen or larger"],
-      icon: "💻",
-      note: "Tablets and most Chromebooks won\u2019t work.",
+      headline: "Runs in a web browser",
+      specs: ["Nothing to install", "Chromebooks fine", "Any modern browser"],
+      icon: "🌐",
+      note: "A school or shared family laptop works for this one.",
     },
-    platforms: [{ name: "python.org", url: "https://www.python.org/" }],
+    platforms: [
+      { name: "CodeHS Sandbox", url: "https://codehs.com/explore/sandbox" },
+    ],
   },
   {
     icon: "🎮",
@@ -189,9 +193,10 @@ export function Coding101Section() {
             ))}
           </div>
 
-          {/* Parents decide what gets installed on their child's machine and
-              what accounts get made in their child's name. Saying so up front
-              removes the objection before it becomes a reason not to enroll. */}
+          {/* Both courses now run in the browser, so the install objection is
+              mostly gone — what is left is the account. Parents decide what
+              gets made in their child's name. Saying so up front removes the
+              objection before it becomes a reason not to enroll. */}
           <div className="text-left border-2 border-dashed border-black rounded-2xl p-4 md:p-5 flex items-start gap-4 mb-3 md:mb-4">
             <span
               aria-hidden="true"
@@ -204,9 +209,9 @@ export function Coding101Section() {
                 Parents approve the setup
               </p>
               <p className="font-sans text-xs md:text-sm text-black/60 leading-snug">
-                Nothing is installed and no account is created without your OK.
-                Prefer not to install anything? We can work in the browser
-                instead.
+                Both courses run in the browser — there is nothing to install
+                on your machine. No account is created in your child&rsquo;s
+                name without your OK.
               </p>
             </div>
           </div>

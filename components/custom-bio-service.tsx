@@ -10,6 +10,58 @@ const genres = [
   "Revolutionary Anthems",
 ]
 
+// The credit line, broken out so it can be set as liner notes rather than
+// buried in a paragraph. This is the integrity statement of the whole
+// section — it says plainly what is and is not his voice — so it is given
+// the weight of an album credits panel instead of a bolded sentence.
+const contributions = [
+  "Songwriting",
+  "Lyrics",
+  "Concepts",
+  "Vocal development",
+  "Production direction",
+  "Branding",
+  "Technical systems",
+  "Overall execution",
+]
+
+// The technical offering, stated as deliverables rather than as tools or
+// skill level. Two rules for anyone editing this list:
+//
+//  1. Never claim to be the engineer. The final mix and master are a
+//     collaborator's work, and saying so is the professional norm — producers
+//     do not mix their own records. Framing it as a partnership reads as
+//     credential, not as a gap.
+//  2. Never claim a voice model can be made without the artist's approved
+//     recordings and explicit permission. The consent language in the prose
+//     above is load-bearing; keep these entries consistent with it.
+const capabilities = [
+  {
+    icon: "💿",
+    name: "Rebuild an AI track as a real record",
+    blurb:
+      "Bring a song you generated with AI. I can rewrite it, arrange it, and produce it properly — as a record with real vocals behind it.",
+  },
+  {
+    icon: "🎙️",
+    name: "A private voice model, trained on you",
+    blurb:
+      "With your permission and your approved recordings, I can train a voice model locally — on a machine, not uploaded to someone else's service.",
+  },
+  {
+    icon: "🧰",
+    name: "Your own setup, not a subscription",
+    blurb:
+      "I can stand up open-source models on your own hardware, trained on your own voice — your version of the tools, owned by you and running without me.",
+  },
+  {
+    icon: "🎛️",
+    name: "Engineered alongside a professional",
+    blurb:
+      "I build in FL Studio and direct the production. A sound engineer I work with takes it the rest of the way — the final mix and master.",
+  },
+]
+
 const features = [
   "Original songwriting & lyrics",
   "Written to fit your voice & style",
@@ -31,27 +83,119 @@ export function CustomBioService() {
 
         <div className="text-black font-sans mb-6 md:mb-8 max-w-2xl mx-auto">
           <blockquote className="text-left border-l-4 border-black pl-4 md:pl-6 mb-6 md:mb-8">
-            <p className="font-serif italic text-black text-lg md:text-2xl lg:text-3xl leading-snug">
-              I combine music, technology, and original storytelling.
+            <p className="font-serif italic text-black text-lg md:text-2xl lg:text-3xl leading-snug text-balance">
+              Most people write a song and hope it fits you. I study how you
+              sing first.
             </p>
           </blockquote>
 
           <div className="text-left space-y-3 md:space-y-4 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
-            <p>
-              As a developer, Full-Stack Systems Architect, Multi-Domain Strategist, songwriter, lyricist, and creative producer, I create work tailored to each artist.
-            </p>
-            <p>
-              Through GunSmoke Beats, I write original songs and lyrics for artists, projects, organizations, and brands — built around their voice, style, message, and audience.
-            </p>
-            <p>
-              Using professional audio software, open-source tools, and authorized AI technology, I can study an artist&rsquo;s vocal range, tone, phrasing, and delivery to write music that genuinely fits how they perform.
-            </p>
-            <p>
-              When appropriate and with the artist&rsquo;s permission, I can also develop private, locally trained AI voice models from approved recordings to help explore melodies, vocal arrangements, demos, and creative direction. I also teach artists how to use AI responsibly within their own creative workflows.
-            </p>
             <p className="font-semibold">
-              I do not present myself as the singer on every record. My contribution is in the songwriting, lyrics, concepts, vocal development, production direction, branding, technical systems, and overall execution.
+              Your range. Your phrasing. Where you breathe, where you push, the
+              note you reach for when nobody is producing you.
             </p>
+            <p>
+              That is the input. The song is the output — written to how you
+              actually perform, not to how a demo singer would.
+            </p>
+            <p>
+              I came to this from software. I architect full-stack systems, and
+              the same discipline runs the music: study the inputs, build to
+              spec, ship something that works. Through GunSmoke Beats I write
+              original songs and lyrics for artists, for brands, and for
+              organizations with something worth saying.
+            </p>
+            <p>
+              With your permission and your approved recordings, I can train a
+              private voice model on your voice — locally, on a machine, never
+              handed to a service that keeps it. We use it to explore melodies,
+              arrangements and demos before you ever step to the mic.
+            </p>
+          </div>
+
+          {/* The closing line of the whole pitch, lifted out of the prose and
+              set as a headline. font-retro is the display face used for the
+              section headings, so this reads as a statement rather than as a
+              sentence that happens to be bold. The accent colour lands only on
+              the second half — the reversal is the point. */}
+          <div className="text-center border-y-4 border-black py-8 md:py-11 my-8 md:my-12">
+            <p className="font-sans text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] text-black/40">
+              Then I teach you to run it yourself
+            </p>
+            <p className="font-retro text-2xl md:text-3xl lg:text-4xl leading-tight text-balance max-w-2xl mx-auto mt-5 md:mt-6">
+              Most producers hand you a song.{" "}
+              <span className="text-[#DA3901]">
+                I would rather hand you the system that makes them.
+              </span>
+            </p>
+          </div>
+
+          {/* Liner-notes panel. Deliberately the only element in this section
+              with an accent shadow and numbered credits — it should stop the
+              eye the way a credits sleeve does. */}
+          <div className="text-left border-2 border-black rounded-2xl p-5 md:p-8 shadow-[4px_4px_0px_rgba(218,57,1,1)] md:shadow-[6px_6px_0px_rgba(218,57,1,1)] mb-6 md:mb-8">
+            <p className="font-sans text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] text-black/40">
+              Credit where it is due
+            </p>
+
+            {/* text-balance evens the line lengths instead of letting the
+                last word drop alone. Keep it on any display line in here. */}
+            <p className="font-serif italic text-black text-lg md:text-2xl lg:text-3xl leading-snug text-balance text-center max-w-xl mx-auto mt-3 md:mt-4">
+              I do not present myself as the singer on every record.
+            </p>
+
+            <p className="font-sans text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] text-[#DA3901] mt-7 md:mt-9 pt-6 md:pt-7 border-t-2 border-black/10">
+              My contribution
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 md:gap-x-10 gap-y-0 mt-4">
+              {contributions.map((item, i) => (
+                <li
+                  key={item}
+                  className="flex items-baseline gap-3 md:gap-4 py-2.5 border-b border-black/10"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 font-sans text-[10px] md:text-[11px] font-black tabular-nums text-[#DA3901]"
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-sans text-sm md:text-base font-bold leading-snug">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* What I can actually build. Sits after the credits panel because
+              that one says what I do; this one says what you get. */}
+          <div className="text-left mb-6 md:mb-8">
+            <p className="font-sans text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] text-black/40 mb-4 md:mb-5">
+              The technical side
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
+              {capabilities.map((item) => (
+                <div
+                  key={item.name}
+                  className="flex flex-col gap-2 border-2 border-black rounded-2xl p-4 md:p-5 shadow-[3px_3px_0px_rgba(0,0,0,1)]"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-2xl border-2 border-black bg-white text-xl md:text-2xl leading-none shadow-[3px_3px_0px_rgba(218,57,1,1)]"
+                  >
+                    {item.icon}
+                  </span>
+                  <span className="font-sans text-sm md:text-base font-bold leading-snug text-pretty">
+                    {item.name}
+                  </span>
+                  <span className="font-sans text-xs md:text-sm leading-snug text-black/70 text-pretty">
+                    {item.blurb}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <p className="text-base md:text-lg lg:text-xl leading-snug font-bold py-2 md:py-4 mb-2">

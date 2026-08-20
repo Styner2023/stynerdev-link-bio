@@ -7,7 +7,7 @@
 import { useState } from "react"
 import type { ComponentType, SVGProps } from "react"
 import Image from "next/image"
-import { ExternalLink, Music, Globe, Code, BookOpen, GraduationCap, UserPlus, ShieldCheck, Fingerprint } from "lucide-react"
+import { ExternalLink, Music, Globe, Code, BookOpen, GraduationCap, UserPlus, ShieldCheck, Fingerprint, Heart } from "lucide-react"
 import { DonationModal } from "./donation-modal"
 
 // Lucide deprecated its brand icons, so these are inlined.
@@ -200,6 +200,12 @@ const sections: Section[] = [
   {
     title: "Support",
     links: [
+      {
+        label: "Give to Kuumba Code — Fund a Student's Free Year",
+        url: "https://www.kuumbacode.com/give",
+        icon: Heart,
+        note: "Tax-deductible through our 501(c)(3) fiscal sponsor, Canticle Farm.",
+      },
       {
         label: "Support The Work",
         url: "#",
